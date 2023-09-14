@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/DSA-Bootcamp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Java-Dsa-Bootcamp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/Java-Dsa-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/binarySearch_1D_dsawithKunal" vcs="Git" />
+  </component>
+</project>
