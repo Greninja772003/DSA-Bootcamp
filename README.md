@@ -1,2 +1,3 @@
-# DSA-Bootcamp
-Dsa programs repos
+# Java-DSA Bootcamp
+Java and Dsa programs repo
+
