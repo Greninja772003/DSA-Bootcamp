@@ -1,0 +1,99 @@
+One-Dimensional ARRAY:
+➢ Array	is	a	collection	of	similar	data	elements.
+➢ In	java	the	array	size	is	given	after	creating	the	new	object.
+As			int	A[]=	new	int[x];
+Where	A[]	is	the	reference	and	int[x]	is	the	object.
+Where	object	is	created	in	the	heap.
+And	the	reference	is	either	in	stack	or	heap.
+➢ Location	of	characters	in	array	can	be	accessed	by	using	their	index.
+➢ Every	array	in	java	has	length	as	its	property	which	can	be	accessed
+by	using	“array-name.length”.
+➢ For	loops	are	most	frequently	used	for	arrays.
+➢ Using	for	loop	all	the	elements	in	the	arrays	can	be	accessed/
+elements	in	array	can	be	transveresed	using	arrays.
+➢ Java	has	introduced	for	each	loop	for	accessing	arrays	in	version	java
+1.5	or	java	5.
+➢ For	each	loop:	syntax						for(type	var	:	array)
+				{
+Statements	using	var;
+	}
+
+Example	program:
+class test
+{
+ public static void main(String args[])
+ {
+ int A[]={2,4,6,8,10}
+ for(int i=0;i<A.length;i++)
+ {
+ System.out.println(A[i]);
+ }
+ for(int i=A.length-1;i>=0;i--)
+ {
+ System.out.println(A[i]);
+ }
+ }
+}
+
+Two-Dimensional ARRAY:
+➢ Two-dimensional	array	are	suitable	for	matrices	and	tabular	form.
+➢ Syntax	for	creating	two-dimensional	array	in	java	is
+:	int	A[][]	=	new	int	[3][4].
+➢ It	is	also	known	as	array	of	arrays	or	collection	of	arrays
+➢ Object	is	created	In	heap	but	the	reference	may	or	may	not	be	created
+in	heap.
+➢ Array_name.length	gives	number	of	rows.
+➢ Array_name[index].length	gives	the	number	of	columns.
+Example	program:
+class test
+{
+ public static void main(String args[])
+ {
+ int A[][];
+ for(int i=0;i<A.length;i++)
+ {
+ for(int j=0;j<A[0].length;j++)
+ {
+ System.out.println(A[i][j]);
+ }
+ System.out.println(“\n”);
+ }
+ }
+}
+
+➢ In	for	each	loop	the	array	have	no	integer	elements	but	the	reference
+elements.
+➢ Syntax	of	for	each	loop	for	two	dimensional	array:
+for(type	var	:array)
+{
+for(type	var1	:type	var)
+ {
+ Statements	using
+var(type	var	1);
+}
+}
+Example:
+class test:
+{
+ public static void main(String args[])
+ {
+ int A[];
+ for(int x[]:A)
+ {
+ for(int y:x)
+ {
+ System.out.println(y);
+ }
+ System.out.println(“\n”);
+ }
+ }
+}
+
+Jagged	array	is	a	type	of	array	in	which	the	members	are	of	different
+sizes.
+➢ In	jagged	array	the	members	of	arrays	are	created	separately
+according	to	their	sizes	using	their	indices.
+
+
+
+

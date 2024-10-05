@@ -1,0 +1,146 @@
+Data types specify the different sizes and values that can be stored in the variable. There are two types of data types
+in Java:
+Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+Non-primitive data types: The non-primitive data types include Classes, Interfaces, and Arrays.
+
+Java Primitive Data Types
+In Java language, primitive data types are the building blocks of data manipulation. These are the most basic data types
+available in Java language.
+Java is a statically-typed programming language. It means, all variables must be declared before its use. That is why
+we need to declare variable's type and name.
+
+Primitive data types: 
+integral: byte, int, short, long
+float: float, double
+char
+boolean
+
+Data Type	Default Value	Default size
+boolean	    false	        1 bit
+char	    '\u0000'	    2 byte
+byte	    0	            1 byte
+short	    0	            2 byte
+int	        0	            4 byte
+long	    0L	            8 byte
+float	    0.0f	        4 byte
+double	    0.0d	        8 byte
+
+Variables are used to store data.
+[ int var ;] declaration
+[ var = 40;] initialization
+the data type of variable should be selected on the basis of the variable size requirement.
+After selecting the data type for variable the a particular size of memory get allocated for the variable initially
+with some default value. The memory allocation for variables happens at runtime.
+
+Variables Naming Rules:
+-> Case sensitive, it means variable name "var" and "Var" will be treated as different named variables.
+-> Variables can only declared by using alphabets,numbers and '$' sign.
+-> Variable names should always starts with alphabet,(_) underscore, or '$' sign.
+-> Variable name should not be exact similar to a pre-defined keyword used in java language.
+-> Variable name should not be a class name, that is currently has been used in the program.
+-> There is no limit on the length of name variable.
+-> Use Camel case to name a variable or function.
+
+Literal: Any constant value which can be assigned to the variable is called literal/constant.
+literals also have data types.
+Literals in Java is a synthetic representation of boolean, numeric, character, or string data. It is a medium of
+expressing particular values in the program, such as an integer variable named ‘’/count is assigned an integer value in
+the following statement.
+// Here 100 is a constant/literal.
+int x = 100;
+
+Literals types values:
+byte -> integer
+short -> integer
+int -> integer
+long -> L or l
+float -> F or f
+double -> D or d
+char -> ' '
+boolean -> true/false
+
+• The reason for java having short type of data is for smaller number for efficient memory utilisation , therefore byte
+is also used for the same purpose.
+• They are all signed datatype as all of them support both positive and negative datatype.
+• In bytes one bit is reserved for sign value ( + , - )
+• Number can be stored only in 7 bits
+• The minimum number that can be stored in this 7 bits is 0 and max is 127.
+• The negative numbers are stored in two’s compliment form.
+
+Float and Character Datatype
+• A decimal number is not stored inside the memory but they represent decimal number . so, in order to avoid it we move
+the decimal point that means we float that point hence we call it as float type.
+• The float number is stored in binary form and its conversion is done as follows the standard used for conversion is
+IEEE 754 format.
+Float
+163.52
+163.52 x 100 / 100
+16352 x 1 / 100
+16352 x 10
+• When you want to precise value in decimal point then we can
+go for double because in some cases detail decimal value is
+needed for accurate result.
+• It supports upto 14 numbers under
+-2
+Char :
+• The computer doesn’t support alphabets so we use numeric
+code for theses characters . So, those codes are called ASCII
+codes
+• This is supported by other programming language
+• Not only for English but they are codes available for every
+natural language in the world as internet supports various
+languages so must the machines too theses codes are called
+unicodes
+• Therefore ASCII codes comes under Unicode
+
+Java Unicode
+Computer systems internally store data in binary representation. A character is stored using a combination of 0's and
+1's. The process is called encoding. A character encoding scheme is important because it helps to represent the same
+information on multiple types of devices.
+
+Types of Encoding
+Following are the different types of encoding used before the Unicode system:
+ASCII (American Standard Code for Information Interchange): used for the United States
+ISO 8859-1 used for the Western European Languages
+KOI-8 used for Russian
+GB18030 and BIG-5 used for Chinese and so on.
+Base64 used for binary to text encoding
+Why does Java use Unicode System?
+There were a few limitations to the encoding techniques used before the Unicode system.
+
+In every language, different letters are present and the code assigned to every letter is also different which means
+multiple languages have multiple codes for various letters.Certain languages have many character sets, the code
+assigned to each character may vary in terms of length. For example, some character can be encoded with a single byte,
+other might require two or more bytes. These problems led to finding a better solution for character encoding that is
+Unicode System.
+
+What is Unicode System?
+Unicode system is an international character encoding technique that can represent most of the languages around the
+world.
+Unicode System is established by Unicode Consortium.
+Hexadecimal values are used to represent Unicode characters.
+There are multiple Unicode Transformation Formats:
+UTF-8: It represents 8-bits (1 byte) long character encoding.
+UTF-16: It represents 16-bits (2 bytes) long character encoding
+UTF-32: It represents 32-bits (4 bytes) long character encoding.
+To access a Unicode character the format starts with an escape sequence \u followed by 4 digits hexadecimal value.
+A Unicode character has a range of possible values starting from \u0000 to \uFFFF.
+Some of the Unicode characters are
+\u00A9 represent the copyright symbol - ©
+\u0394 represent the capital Greek letter delta - Δ
+\u0022 represent a double quote - "
+[
+ Program to convert UTF-8 to Unicode
+UnicodeDemo.java
+public class UnicodeDemo
+{
+   public static void main(String ar[]) throws Exception
+   {
+      String str1 = "Unicode Sytem\u00A9";
+      byte[] charset = str1.getBytes("UTF-8");
+      String newstr = new String(charset, "UTF-8");
+      System.out.println(newstr);
+   }
+}
+]
+

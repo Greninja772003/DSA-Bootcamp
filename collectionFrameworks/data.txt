@@ -1,0 +1,6 @@
+#Laptop
+#Thu Apr 25 18:18:44 IST 2024
+Brand=\ Asus
+OS=\ Linux
+model=\ Zenbook
+processor=\ Ryzen 7
