@@ -1,0 +1,94 @@
+Arithmetic operations (+), (-), (/), (*), (%) we can use these operators with any data type except for boolean data
+types.
+
+Modulus(%) Operator: y = 10/3 gives 3.33 but y = 10%3 gives 1. The modulus operator is used to get the remainder value
+from a divide operation. Unlike other languages in Java we can perform modulus operations in float data type as well.
+(*), (/), (%) operators have higher precedence then (+) and (-) operators, it means during execution of an expression
+they(*, /, %) execute first then (+) and (-).
+To change the precedence of operators like in case if you want execute (+) operation before (*) the use () parenthesis
+around that expression.
+Examples of expression:
+1) a + b /2 when this expression execute, the value of variable [a] get added to the half [b] value which is wrong,
+whereas the correct way to execute this expression should be like: (a + b)/2 .
+2) a + b / 2c when this expression execute, the value of variable [a] get added to the half [b] value and then
+multiplied with variable [c] which is wrong, whereas the correct way to execute this expression should be like:
+(a+b)/2*c.
+3) a^2 - b^2 this expression execute, by this way: a*a - b*b.
+
+Byte, short, int, long, float, double, char all these data types variables use arithmetic operators for performing
+different operations. But what happens when they used arithmetic operators between two different data types, the result
+of two different data types performing (+) operation is:
+byte + byte = int value // result of two byte data type variable is stored in a int variable data type
+short + short = int value // result of two short data type variable is stored in a int variable data type
+byte + short = int value // result of byte and short data type variable is stored in a int variable data type
+int + int = int value  // result of two int data type variable is stored in a int variable data type
+short + int = int value // result of short and int data type variable is stored in a int variable data type
+The above operation on different data types results stored in only int value because during the execution of the
+expression java convert these data types into int type by its own i.e. their operation produce int value. This is known
+as coercion.
+Remaining data type operations:
+int + float = float // int converted into float type and then operation performed
+long + float = float // long converted into float type and then operation performed
+char + short = int // both char and short converted into int type and then operation performed
+char + int = int // char converted into int type and then operation performed
+float + double = double // float converted into double type and then operation performed
+long + double + double // long converted into double type and then operation performed
+
+On boolean data type we can't perform increment or decrement operation.
+
+Bitwise Operator
+• The bitwise operator are
+AND	 	 	 	 	 	         &
+OR	 	 	 	 	 	 	 	 |
+NOT 	 	 	 	 	 	 	 ~
+XOR 	 	 	 	 	 	 	 ^
+Right Shift 	 	 	 	 	 	 >>
+Unsigned Right Shift 	 	 	 	 >>>
+Left Shift 	 	 	 	 	 	 <<<
+• These operators are faster than other operators
+• It works on the principle of Truth Tables
+• These bitwise operator are performed only on integer type of
+data
+• If you are taking byte and short the result will still be an
+integer 
+• When you are shifting , one of the bits will be vacant so that has to be filled with
+with 0
+• In right shift the signed bit is untouched it remains -ve only
+whereas in unsigned right shift the bit become +ve
+• In NOT if you take any number suppose 10 it will become -11, if
+you take 6 it becomes -7
+Negative numbers in bitwise operations are saved in 2's compliment form.
+
+Bit masking and merging
+• These operations are performed using bitwise operations
+• The process of setting one of the bit as 1 in all zeros is
+called Merging
+Ex :
+A ->		 0 0 0 0 0 0 0 0 0 0
+B ->	     0 0 0 0 0 0 1 0 0 0
+a = A | B    0 0 0 0 0 0 1 0 0 0
+
+A -> 8       0 0 0 0 1 0 0 0
+B=64 ->		 0 1 0 0 1 0 0 0
+a = A | B    0 1 0 0 1 0 0 0
+
+• Masking means you are hiding all the bits and showing
+only particular bits
+
+Widening and Narrowing
+• This process is related to conversion of datatype into data
+item
+• Storing the data of smaller size datatype into a larger size
+datatype is called WIDENING this process is done
+automatically by the compiler
+• The datatype in widening must be compatible , that is the
+source must be smaller or equal to the destination
+• Widening is also called UPCASTING
+• If these two points are not satisfied then widening must be
+done explicitly means by ourself this process is called
+NARROWING
+• This occur when source data is larger that destination data
+size
+• An example of this is float value cannot be stored in integer
+value but integer can be stored inside float
+• Narrowing is also called DOWN CASTING
